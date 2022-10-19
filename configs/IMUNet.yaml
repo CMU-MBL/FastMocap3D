@@ -1,0 +1,19 @@
+name: 'baseline'
+logdir: 'logger/imunet/'
+model-type: 'imu'
+
+epoch: 25
+seq-length: 50
+batch-size: 16
+num-workers: 4
+write-freq: 100
+joint-type: 'TC16'
+sex: 'male'
+
+lw-pose: 5e1
+
+calib-noise: 0.15
+gru-num-layers: 0
+drop-rate: 0.1
+attn-drop-rate: 0.
+attn-drop-path-rate: 0.1

@@ -1,0 +1,24 @@
+name: 'baseline'
+logdir: 'logger/videonet/'
+model-type: 'video'
+
+epoch: 25
+seq-length: 50
+batch-size: 16
+num-workers: 8
+write-freq: 100
+joint-type: 'TC16'
+sex: 'male'
+
+lw-keypoints: 1e3
+lw-pose: 5e1
+lw-betas: 5e-2
+lw-transl: 5e2
+
+init-weight: ''
+keypoints-noise: 5e-3
+use-keypoints-conf: False
+gru-num-layers: 0
+drop-rate: 0.1
+attn-drop-rate: 0.
+attn-drop-path-rate: 0.1

@@ -1,0 +1,24 @@
+name: 'baseline'
+logdir: 'logger/fusionnet/'
+model-type: 'fusion'
+
+lr: 3e-5
+epoch: 25
+seq-length: 50
+batch-size: 16
+num-workers: 4
+write-freq: 100
+joint-type: 'TC16'
+sex: 'male'
+keypoints-noise: 5e-3
+calib-noise: 0.15
+  
+lw-keypoints: 1e3
+lw-pose: 5e1
+lw-betas: 5e-2
+lw-transl: 5e2
+
+supervise-unimodal-until-n-epoch: 5
+drop-rate: 0.1
+attn-drop-rate: 0.
+attn-drop-path-rate: 0.1
